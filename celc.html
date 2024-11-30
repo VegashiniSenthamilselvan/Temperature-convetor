@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <style>
+        body, h1, h2, h3, p, ul, li, form, input
+         {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body 
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height: 1.6;
+            background: white;
+            color: black;
+            padding: 20px;
+            font-size: large;
+        }
+
+       
+        header 
+        {
+            background:rgb(226, 243, 255);
+            color: white;
+            padding: 10px 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+        }
+
+       
+        nav 
+        {
+            background:rgb(226, 243, 255);
+            padding: 10px;
+        }
+
+        nav ul 
+        {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li 
+        {
+            margin: 0 15px;
+        }
+
+        nav ul li a 
+        {
+            color:black;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover 
+        {
+            color: rgb(166, 222, 255);
+        }
+
+       
+        .search-container 
+        {
+            position: absolute;
+            right: 20px;
+            top: 33px; 
+            color: gray;
+        }
+
+        .search-input 
+        {
+            padding: 8px 40px 8px 20px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            font-size: 14px;
+            width: 200px;
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%; 
+           transform: translateY(-50%);
+            color: gray;
+            cursor: pointer;
+        }
+
+        .search-icon::before 
+        {
+            content: "\1F50D"; 
+            font-size: 16px;
+        }
+
+        
+        footer {
+            background:rgb(226, 243, 255);
+            color:black;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        
+        footer:hover {
+            color: rgb(166, 222, 255);
+        }
+
+        h2
+        {
+            color:  rgb(139, 209, 249);
+        }
+        .main-content 
+        {
+            text-align: center; 
+            margin-top: 30px; 
+        }
+
+      
+        .input-container
+         {
+            margin-top: 20px; 
+        }
+
+        input[type="number"] 
+        {
+            width: 80px;
+            padding: 5px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background:  rgb(166, 222, 255);
+        }
+
+        .result {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .rectangular-box {
+            width: 900px;
+            height: 200px;
+            background-color: rgb(252, 252, 252);
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px auto; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="temperature.html">About</a></li>
+                <li><a href="faren.html">Celsius to Fahrenheit</a></li>
+                <li><a href="Celc.html">Fahrenheit to Celsius</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search...">
+            <div class="search-icon"></div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <h1>TEMPRATURE CONVERTOR</h1>
+        <hr>
+        <br>
+        <h3>How Do You Convert Celsius to Fahrenheit?</h3>
+        <br>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;To convert temperatures in degrees Celsius to Fahrenheit, multiply by 1.8 (or 9/5) and add 32.</p>
+        <br>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Example: (30°C x 1.8) + 32 = 86°F’</p>
+        <br>
+        <div class="rectangular-box">
+            <h2>Fahrenheit to Celsius Conversion</h2>
+            <div class="input-container">
+                <label for="fi"><b>Enter Fahrenheit temperature:</b></label>
+                <input type="number" id="c">
+                <br><br>
+                <button onclick="celc()">Convert</button>
+            </div>
+            <div id="result" class="result"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2050 Temperature Converter. All rights reversed.</p>
+    </footer>
+
+    <script>
+        function celc() 
+        {
+            let c=document.getElementById('c').value;
+            if (c!=='') 
+            {
+                let faren = parseFloat(c)*(9/5)+32;
+                document.getElementById('result').innerText=`${faren.toFixed(2)}°F`;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temparture</title>
+    <style>
+        body, h1, h2, h3, p, ul, li, form, input {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height: 1.6;
+            background: white;
+            color: black;
+            padding: 20px;
+            font-size: large;
+        }
+
+        header
+         {
+            background:rgb(226, 243, 255);
+            color: black;
+            padding: 10px 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+        }
+
+        nav {
+            background:rgb(226, 243, 255);
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center; /* Center align navigation items */
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: rgb(166, 222, 255);
+        }
+
+        .search-container {
+            position: absolute;
+            right: 20px;
+            top: 33px; 
+            color: gray;
+        }
+
+        .search-input {
+            padding: 8px 40px 8px 20px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            font-size: 14px;
+            width: 200px;
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: gray;
+            cursor: pointer;
+        }
+
+        .search-icon::before {
+            content: "\1F50D"; 
+            font-size: 16px;
+        }
+
+        footer {
+            background: rgb(226, 243, 255);;
+            color:black;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+        footer:hover
+        {
+            color:  rgb(166, 222, 255);;
+        }
+
+        h2 {
+            margin-top: 30px; 
+        }
+
+        ul {
+            margin-left: 30px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="temperature.html">About</a></li>
+                <li><a href="faren.html">Celsius to Fahrenheit</a></li>
+                <li><a href="celc.html">Fahrenheit to Celsius</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search...">
+            <div class="search-icon"></div>
+        </div>
+    </header>
+    <br>
+    <center>
+        <h1>TEMPRATURE CONVERTOR </h1>
+    </center>
+        <hr>
+    <br>
+    <body>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Welcome to Temperature convertor page  your ultimate resource for all things related to temperature. Our mission is to provide comprehensive information and resources to help you understand the importance of temperature in various fields and its impact on everyday life. Whether you're a student, a professional, or simply curious about how temperature works, TemperatureHub.com is here to educate and inform.</p>       
+        <br>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;The Fahrenheit temperature scale is named for German physicist Daniel Gabriel Fahrenheit and is the temperature measurement commonly used by the United States (and its associated territories) and several Caribbean nations. On the Fahrenheit scale, water freezes at 32°F and boils at 212°F (at sea level).</p>
+        <br>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;The Celsius temperature scale—originally called centigrade and later renamed for Swedish astronomer Anders Celsius—is used almost everywhere else in the world. On the Celsius scale, the freezing point of water is 0°C, and the boiling point of water is 100°C (at sea level).</p>
+        <br>
+        <center>
+            <img src="https://uploads-cdn.omnicalculator.com/images/Al_Temp_Intro.jpg?width=425&enlarge=0&format=webp">
+
+        </center>
+        <br><br>
+        <h3>Temperature Basics</h3>
+        <br>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Temperature is a fundamental physical quantity that measures the warmth or coldness of an object or environment. It plays a crucial role in physics, chemistry, biology, engineering, and meteorology. Understanding temperature involves knowing different temperature scales, which include Celsius (°C), Fahrenheit (°F), and Kelvin (K).</p>
+        <br>
+       
+        <ul>
+           <li><b>Celsius (°C): </b>&nbsp;The Celsius scale is commonly used worldwide for everyday temperature measurements. Water freezes at 0°C and boils at 100°C under standard atmospheric pressure.</li> 
+           <br>
+           <li><b>Fahrenheit (°F):</b>&nbsp; The Fahrenheit scale is used primarily in the United States and a few other countries. Water freezes at 32°F and boils at 212°F under standard atmospheric pressure.</li> 
+           <br>
+           <li><b>Kelvin (K):</b>&nbsp;The Kelvin scale is based on absolute zero, the theoretical lowest temperature possible where all molecular motion ceases. Absolute zero is 0 Kelvin (-273.15°C or -459.67°F).</li> 
+        </ul>
+        
+        <br>
+        <h3>Types of Thermometers</h3>
+        <br>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Thermometers are instruments used to measure temperature accurately. There are various types of thermometers designed for different applications:</p>
+        <br>
+        <ul>
+            <li><b>Mercury Thermometer:</b>&nbsp; A glass tube filled with mercury that expands or contracts with temperature changes. This type is commonly used in clinical settings.
+            </li><br>
+            <li><b>Digital Thermometer:</b>&nbsp; Uses electronic sensors to measure temperature and displays the reading digitally. Digital thermometers are versatile and can be used in a wide range of applications.</li>
+            <br>
+            <li><b>Infrared Thermometer:</b>&nbsp;Measures temperature from a distance by detecting infrared energy emitted by objects. It's used for non-contact temperature measurement in industrial, medical, and scientific applications.</li>
+            <br>
+            <li><b>Thermocouple:</b>&nbsp;A temperature sensor consisting of two different metals joined at one end. It generates a voltage proportional to the temperature difference between the measurement end and the reference end. Thermocouples are used in industrial and scientific applications where fast response and wide temperature ranges are required.</li>
+            <br>
+            <li><b>Thermistor: </b>&nbsp;A type of resistor whose resistance changes significantly with temperature. Thermistors are used in temperature measurement and control systems.</li>
+        </ul>
+        <br>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Each type of thermometer has its advantages and is suited to specific environments and conditions. Understanding these differences helps in choosing the right thermometer for your needs.
+        </p>
+    </body>
+
+    <footer>
+        <p>&copy; 2050 Temperature convertor. All rights reversed.</p>
+    </footer>
+</body>
+</html>
